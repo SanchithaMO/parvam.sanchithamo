@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .container{
+            width:80vw;
+            height:60vw;
+            border:2px lawngreen;
+            padding:10px;
+            display:flex;
+            flex-direction: column;
+            gap: 10px;
+            position:relative;
+        }
+        .child{
+            width: 200px;
+            height: 200px;
+            border:2px cyan;
+        }
+        .fir{
+            background-color: aqua;
+            animation-name: change_bg;
+            animation-duration: 3s;
+            animation-timing-function: ease-out;
+            position:absolute;
+            
+        }
+        @keyframes change_bg {
+         /* from{
+                background-color: lawngreen;
+
+            }
+            to{
+                background-color: red;
+            }
+        
+        }*/
+        0%{
+            background-color: aqua;
+            top:0;
+            left:0;
+        }
+        25%{
+            background-color: brown;
+            top: 0;
+            left:980px;
+        }
+        50%{
+            bottom: 0;
+            right: 0 px;
+            background-color: black;
+                
+        }
+        100%{
+            background-color: springgreen;
+            bottom: 0;
+            left: -1;
+        }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="child fir">1</div>
+        </div>
+        
+
+    
+</body>
+</html>

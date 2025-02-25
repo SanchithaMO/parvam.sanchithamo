@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hardvard University, Cambridge Massachusetts</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        /* Header */
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-container img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        .header-buttons {
+            margin-right: 20px;
+        }
+
+        .btn {
+            background: white;
+            color: #007BFF;
+            padding: 8px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-left: 10px;
+        }
+
+        .btn:hover {
+            background: #0056b3;
+            color: white;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background: #333;
+            padding: 10px;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Search Bar */
+        .search-container {
+            margin-right: 20px;
+        }
+
+        #searchBar {
+            padding: 5px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        /* Main Content */
+        .content {
+            padding: 40px;
+        }
+
+        /* Image Styling */
+        .image-container img {
+            width: 300px;
+            height: auto;
+            border-radius: 5px;
+            margin: 5px;
+        }
+
+        /* Contact Section */
+        .contact {
+            background: #f4f4f4;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        /* Google Maps Embed */
+        .map-container {
+            margin: 20px auto;
+            width: 80%;
+            height: 400px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header with Study-Related Logos -->
+    <header>
+        <span>Harvard University, Cambridge</span>
+        <div class="header-buttons">
+            <button class="btn" onclick="openModal('loginModal')">Login</button>
+            <button class="btn" onclick="openModal('registerModal')">Register</button>
+        </div>
+    </header>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('loginModal')">&times;</span>
+            <h2>Login</h2>
+            <input type="text" placeholder="Username" required><br><br>
+            <input type="password" placeholder="Password" required><br><br>
+            <button onclick="alert('Login successful!')">Submit</button>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('registerModal')">&times;</span>
+            <h2>Register</h2>
+            <input type="text" placeholder="Full Name" required><br><br>
+            <input type="email" placeholder="Email" required><br><br>
+            <input type="password" placeholder="Password" required><br><br>
+            <button onclick="alert('Registration successful!')">Submit</button>
+        </div>
+    </div>
+
+    <script>
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = "block";
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = "none";
+        }
+    </script>
+
+</body>
+</html>
+
+
+    <!-- Home Section -->
+    <div class="content" id="home">
+        <h2>Welcome  to  Harvard Univeristy Cambridge</h2>
+        <p>Providing quality education for future engineers and innovators.</p>
+        <img src="C:\Users\sudee\OneDrive\Desktop\images\college.jpeg" alt="College Banner" width="80%">
+    </div>
+
+    <!-- About Section -->
+    <div class="content" id="about">
+        <h2>About Us</h2>
+        <p>Harvard University, Cambridge Harvard University, founded in 1636, is a prestigious Ivy League institution in Cambridge, Massachusetts, known for its academic excellence and influential research. It has produced numerous Nobel laureates, U.S. Presidents, and global leaders across various fields..</p>
+    </div>
+
+    <!-- Departments Section -->
+    <div class="departments" id="departments">
+        <h2>Our Departments</h2>
+        <div class="department">
+            <img src="C:\Users\sudee\OneDrive\Desktop\images\CSE WORKERS.jpeg" alt="Computer Science & Engineering">
+            <p>Computer Science & Engineering</p>
+        </div>
+        <div class="department">
+            <img src="C:\Users\sudee\OneDrive\Desktop\images\mechnacial.jpeg" alt="Mechanical Engineering">
+            <p>Mechanical Engineering</p>
+        </div>
+        <div class="department">
+            <img src="C:\Users\sudee\OneDrive\Desktop\images\CIVIL.jpeg" alt="Civil Engineering">
+            <p>Civil Engineering</p>
+        </div>
+        <div class="department">
+            <img src="C:\Users\sudee\OneDrive\Desktop\images\EEE.jpeg" alt="Electrical & Electronics Engineering">
+            <p>Electrical & Electronics Engineering</p>
+        </div>
+        <div class="department">
+            <img src="C:\Users\sudee\OneDrive\Desktop\images\EC.jpeg" alt="Electronics & Communication Engineering">
+            <p>Electronics & Communication Engineering</p>
+        </div>
+        <div class="department">
+            <img src="C:\Users\sudee\OneDrive\Desktop\images\ISE.jpeg" alt="Information Science & Engineering">
+            <p>Information Science & Engineering</p>
+        </div>
+        <div class="department">
+            <img src="C:\Users\sudee\OneDrive\Desktop\images\AI.jpeg" alt="Artificial Intelligence & Data Science">
+            <p>Artificial Intelligence & Data Science</p>
+        </div>
+    </div>
+    </div>
+
+    <!-- Gallery Section -->
+    <div class="content" id="gallery">
+        <h2>Campus Gallery</h2>
+        <div class="image-container">
+            <img src="C:\Users\sudee\OneDrive\Desktop\images\college.jpeg" alt="College View">
+            <img src="C:\Users\sudee\OneDrive\Desktop\images\CSE WORKERS.jpeg" alt="Library">
+            <img src="C:\Users\sudee\OneDrive\Desktop\images\campus.jpeg" alt="Laboratory">ss
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+<div class="contact" id="contact" style="display: flex; justify-content: center; align-items: flex-start; gap: 50px;">
+    
+    <!-- Contact Information (Move this first) -->
+    <div class="contact-info" style="flex: 1; max-width: 400px;">
+        <h2>Contact Us</h2>
+        <p>Email: dso@fas.harvard.edu</p>
+        <p>Phone: +1 617-495-1000</p>
+        <p>Address: Harvard College, Cambridge</p>
+        <p><a href="https://maps.google.com/maps/ms?msa=0&msid=212389497753816287218.0004c73a37a177443abf6&hl=en&ie=UTF8&t=m&ll=42.375732,-71.118924&spn=0.006653,0.004465&source=embed" target="_blank">📍 View Location on Google Maps</a></p>
+    </div>
+
+    <!-- Send a Message Form (Move this second, to the right) -->
+    <div class="message-form" style="flex: 1; max-width: 400px;">
+        <h3>Send a Message</h3>
+        <form action="#" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+</div>
+
+        <p><a href="https://maps.google.com/maps/ms?msa=0&msid=212389497753816287218.0004c73a37a177443abf6&hl=en&ie=UTF8&t=m&ll=42.375732,-71.118924&spn=0.006653,0.004465&source=embed" target="_blank">📍 View Location on Google Maps</a></p>
+    </div>
+</div>
+
+
+        <!-- Google Maps Link -->
+        <p><a href=https://maps.google.com/maps/ms?msa=0&msid=212389497753816287218.0004c73a37a177443abf6&hl=en&ie=UTF8&t=m&ll=42.375732,-71.118924&spn=0.006653,0.004465&source=embed target="_blank">📍 View Location on Google Maps</a></p>
+
+       
+
+
+    <script>
+        function searchFunction() {
+            let input = document.getElementById("searchBar").value.toLowerCase();
+            let menuItems = document.querySelectorAll("nav ul li");
+
+            menuItems.forEach(item => {
+                let text = item.innerText.toLowerCase();
+                if (text.includes(input)) {
+                    item.style.display = "block";
+                } else {
+                    item.style.display = "none";
+                }
+            });
+        }
+    </script>
+
+</body>
+</html>
